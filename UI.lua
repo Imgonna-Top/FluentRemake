@@ -207,8 +207,7 @@ local aa = {
 				if x.UseAcrylic then x.Window.AcrylicPaint.Model:Destroy() end
 				p.Disconnect()
                 x.GUI:Destroy()
-                local tg = game:GetService("CoreGui")
-                FindFirstChild("Toggle")
+                local tg = game:GetService("CoreGui"):FindFirstChild("Toggle")
 				if tg then
 					tg:Destroy()
 				end
