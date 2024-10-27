@@ -144,14 +144,14 @@ local aa = {
 						Title = "Interface",
 						Content = "Callback error",
 						SubContent = B,
-						Duration = 5
+						Duration = 0
 					}
 				end
 				return x:Notify{
 					Title = "Interface",
 					Content = "Callback error",
 					SubContent = B:sub(D + 1),
-					Duration = 5
+					Duration = 0
 				}
 			end
 		end
