@@ -206,7 +206,12 @@ local aa = {
 				x.Unloaded = true
 				if x.UseAcrylic then x.Window.AcrylicPaint.Model:Destroy() end
 				p.Disconnect()
-				x.GUI:Destroy()
+                x.GUI:Destroy()
+                local tg = game:GetService("CoreGui")
+                FindFirstChild("Toggle")
+				if tg then
+					tg:Destroy()
+				end
 			end
 		end
 
