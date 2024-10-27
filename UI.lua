@@ -140,19 +140,9 @@ local aa = {
 			if not A then
 				local C, D = B:find":%d+: "
 				if not D then
-					return x:Notify{
-						Title = "Interface",
-						Content = "Callback error",
-						SubContent = B,
-						Duration = 0
-					}
+					print("error")
 				end
-				return x:Notify{
-					Title = "Interface",
-					Content = "Callback error",
-					SubContent = B:sub(D + 1),
-					Duration = 0
-				}
+				print("error 1")
 			end
 		end
 
